@@ -2,18 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-
-
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/start_text"
-        android:layout_width="233dp"
-        android:layout_height="76dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="DECISION"
 
@@ -22,17 +19,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/pr_reshenie"
-        android:layout_width="172dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="104dp"
-        android:text="Принять решение"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/start_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
