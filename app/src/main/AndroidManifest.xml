@@ -23,6 +23,9 @@
             android:label="choice">
 
         </activity>
+        <activity android:name=".severalchoise"
+            android:label="choice">
+        </activity>
 
 
     </application>
