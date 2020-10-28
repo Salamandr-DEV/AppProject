@@ -1,4 +1,6 @@
 package com.example.appproject;
 
-public class yes_no {
+import android.app.Activity;
+
+public class yes_no extends Activity {
 }

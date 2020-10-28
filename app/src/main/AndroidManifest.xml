@@ -16,15 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".yes_no"
-            android:label="choice">
-        </activity>
         <activity android:name=".choice"
             android:label="choice">
-
         </activity>
-        <activity android:name=".severalchoise"
-            android:label="choice">
+
+        <activity android:name=".yes_no"
+            android:label="yes_no">
         </activity>
 
 
