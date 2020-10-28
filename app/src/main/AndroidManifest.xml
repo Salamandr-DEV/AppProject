@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".severalchoise"></activity>
+        <activity android:name=".Number" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,15 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".choice"
-            android:label="choice">
-        </activity>
-
-        <activity android:name=".yes_no"
-            android:label="yes_no">
-        </activity>
-
-
+        <activity
+            android:name=".choice"
+            android:label="choice" />
+        <activity
+            android:name=".yes_no"
+            android:label="yes_no" />
     </application>
 
 </manifest>
