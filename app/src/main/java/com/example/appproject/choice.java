@@ -46,7 +46,7 @@ public class choice extends AppCompatActivity {
 
         public void openYesNo() {
             Intent i;
-            i = new Intent(this, yes_no.class);
+            i = new Intent(this, test.class);
             startActivity(i);
         }
 

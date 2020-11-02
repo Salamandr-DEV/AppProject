@@ -4,26 +4,37 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.view.WindowManager;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity{
 
-    TextView start_text;
+    Thread timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_main);
 
-        Button start = (Button)findViewById(R.id.start);
-        start.setOnClickListener(this);
+        timer = new Thread(){
+            @Override
+            public void run() {
+                try {
+                    synchronized (this){
+                        wait(3000);
+                    }
+                } catch (InterruptedException e){
+                    e.printStackTrace();
+                } finally {
+                    Intent intent = new Intent(MainActivity.this, test.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+        };
+        timer.start();
     }
-    @Override
-    public void onClick(View view) {
-        Intent i;
-        i = new Intent(this, choice.class);
-        startActivity(i);
-    }
-    }
+}
