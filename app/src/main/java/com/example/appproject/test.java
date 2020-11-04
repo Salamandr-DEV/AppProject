@@ -13,7 +13,6 @@ import android.view.Window;
 import android.view.WindowManager;
 
 public class test extends AppCompatActivity{
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +48,7 @@ public class test extends AppCompatActivity{
         helpcard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openYesNo2();
+                openFullscreenActivity();
             }
         });
     }
@@ -67,7 +66,13 @@ public class test extends AppCompatActivity{
 
     public void OpenSeveralchoise() {
         Intent i;
-        i = new Intent(this, severalchoise.class);
+        i = new Intent(this, test_random.class);
+        startActivity(i);
+    }
+
+    public void openFullscreenActivity() {
+        Intent i;
+        i = new Intent(this, yes_no.class);
         startActivity(i);
     }
 }
