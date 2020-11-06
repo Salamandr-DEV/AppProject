@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -34,6 +35,8 @@ public class option extends AppCompatActivity {
     NavigationView nav;
     ActionBarDrawerToggle toggle;
     DrawerLayout drawerlayout;
+    ImageButton button_back_to_decision;
+    Button button_go_test_random;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,24 @@ public class option extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_option);
+
+        button_back_to_decision   = findViewById(R.id.back_decision);
+        button_back_to_decision.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                backToDecision();
+            }
+        });
+
+        button_go_test_random   = findViewById(R.id.button_test_random);
+        button_go_test_random.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                goToDecision();
+            }
+        });
 
         Toolbar toolbar_ = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar_);
@@ -106,6 +127,26 @@ public class option extends AppCompatActivity {
                 linear.addView(view);
             }
         });
+    }
+    public void backToDecision()
+    {
+        Intent i;
+        OnWrite();
+        Bundle b = new Bundle();
+        b.putStringArray("array", items);
+        i = new Intent(this, test_random.class);
+        i.putExtras(b);
+        startActivity(i);
+    }
+    public void goToDecision()
+    {
+        Intent i;
+        OnWrite();
+        Bundle b = new Bundle();
+        b.putStringArray("array", items);
+        i = new Intent(this, test_random.class);
+        i.putExtras(b);
+        startActivity(i);
     }
     public void openOption() {
         Intent i;

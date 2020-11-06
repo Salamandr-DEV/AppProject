@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.widget.Toolbar;
@@ -28,6 +29,8 @@ public class test_random extends AppCompatActivity {
     int OldValue;
     TextView text_several;
     Button button_several;
+    ImageButton button_back_to_menu;
+    Button button_go_option;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -38,6 +41,24 @@ public class test_random extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_test_random);
+
+        button_back_to_menu    = findViewById(R.id.back_menu);
+        button_back_to_menu.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                backToMenu();
+            }
+        });
+
+        button_go_option   = findViewById(R.id.button_option);
+        button_go_option.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                goToOption();
+            }
+        });
         
         Toolbar toolbar_ = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar_);
@@ -69,6 +90,7 @@ public class test_random extends AppCompatActivity {
         });
 
         changeTextView();
+
         Bundle b = this.getIntent().getExtras();
         if(b != null) {
             mainarray = b.getStringArray("array");
@@ -81,14 +103,29 @@ public class test_random extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                int random = (int) (Math.random() * mainarray.length);
-                if (random == OldValue) {
-                    random = (int) (Math.random() * mainarray.length);
+                if(mainarray != null)
+                {
+                    int random = (int) (Math.random() * mainarray.length);
+                    if (random == OldValue) {
+                        random = (int) (Math.random() * mainarray.length);
+                    }
+                    text_several.setText(mainarray[random]);
+                    OldValue = random;
                 }
-                text_several.setText(mainarray[random]);
-                OldValue = random;
             }
         });
+    }
+    public void backToMenu()
+    {
+        Intent i;
+        i = new Intent(this, test.class);
+        startActivity(i);
+    }
+    public void goToOption()
+    {
+        Intent i;
+        i = new Intent(this, option.class);
+        startActivity(i);
     }
     public void openOption() {
         Intent i;
