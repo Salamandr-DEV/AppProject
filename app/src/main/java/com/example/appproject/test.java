@@ -19,6 +19,7 @@ public class test extends AppCompatActivity{
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         setContentView(R.layout.activity_test);
 
@@ -71,8 +72,6 @@ public class test extends AppCompatActivity{
     }
 
     public void openFullscreenActivity() {
-        Intent i;
-        i = new Intent(this, yes_no.class);
-        startActivity(i);
+
     }
 }

@@ -1,6 +1,8 @@
 package com.example.appproject;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -9,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class yes_no extends Activity {
+public class yes_no extends AppCompatActivity {
 
     TextView textYesNo;
     Button buttonYesNo;
@@ -19,6 +21,7 @@ public class yes_no extends Activity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         setContentView(R.layout.yes_no);
 
