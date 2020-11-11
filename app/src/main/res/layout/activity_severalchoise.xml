@@ -12,7 +12,7 @@
         android:layout_width="346dp"
         android:layout_height="89dp"
         android:gravity="center"
-        android:text="Ты безвольное существо которое не может самостоятельно принять решение"
+        android:text="@string/severaltext"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

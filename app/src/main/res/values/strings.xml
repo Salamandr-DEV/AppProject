@@ -8,4 +8,30 @@
     <string name="home">Decision</string>
     <string name="again">Again</string>
 
+    //Да Нет
+    <string name="yesnotext">You want to know the truth</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    //Меню
+    <string name="yesno">Yes/No</string>
+    <string name="number">Number</string>
+    <string name="random">Random</string>
+    <string name="lang">ru</string>
+
+    //Число
+    <string name="randomnumber">Random number</string>
+    <string name="textnumber">Insert the number</string>
+
+    //Варианты
+    <string name="severaltext">Here is your decision</string>
+    <string name="givemeanswer">Give me answer</string>
+    <string name="addalist">Add a list of options</string>
+    <string name="addoption">Add option</string>
+    <string name="getdecision">Get decision</string>
+
+
+
+
+
 </resources>

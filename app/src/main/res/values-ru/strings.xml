@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Decision</string>
+
+    <string name="Open">Открыть</string>
+    <string name="Close">Закрыть</string>
+    <string name="option">Опции</string>
+    <string name="help">Помощь</string>
+    <string name="home">Decision</string>
+    <string name="again">Снова</string>
+
+    //Да Нет
+    <string name="yesnotext">Ты хочешь знать правду</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    //Меню
+    <string name="yesno">Да/Нет</string>
+    <string name="number">Число</string>
+    <string name="random">Варианты</string>
+    <string name="lang">eng</string>
+
+    //Число
+    <string name="randomnumber">Случайное число</string>
+    <string name="textnumber">Введите число</string>
+
+    //Варианты
+    <string name="severaltext">Вот ваше решение</string>
+    <string name="givemeanswer">Дай мне ответ</string>
+    <string name="addalist">Добавление списка опций</string>
+    <string name="addoption">Добавить опцию</string>
+    <string name="getdecision">Получить решение</string>
+
+</resources>

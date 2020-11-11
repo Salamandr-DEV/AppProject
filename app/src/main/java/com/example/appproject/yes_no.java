@@ -36,11 +36,11 @@ public class yes_no extends AppCompatActivity {
                 int number = rand.nextInt(2);
                 if(number == 0)
                 {
-                    textYesNo.setText("No");
+                    textYesNo.setText(R.string.yes);
                 }
                 if(number == 1)
                 {
-                    textYesNo.setText("Yes");
+                    textYesNo.setText(R.string.no);
                 }
 
             }

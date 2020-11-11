@@ -39,6 +39,13 @@
 
         </TextView>
 
+        <Button
+            android:id="@+id/lang_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lang"
+            android:textSize="24sp" />
+
         <androidx.gridlayout.widget.GridLayout
             android:id="@+id/gridLayout"
             android:layout_width="fill_parent"
@@ -78,7 +85,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bubblegum_sans"
-                        android:text="Yes/No"
+                        android:text="@string/yesno"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24sp"></TextView>
@@ -117,7 +124,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bubblegum_sans"
-                        android:text="Number"
+                        android:text="@string/number"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24sp"></TextView>
@@ -156,7 +163,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bubblegum_sans"
-                        android:text="Random"
+                        android:text="@string/random"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24sp"></TextView>
@@ -195,7 +202,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/bubblegum_sans"
-                        android:text="Help"
+                        android:text="@string/help"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="24sp"></TextView>
@@ -204,7 +211,11 @@
 
             </androidx.cardview.widget.CardView>
 
+
         </androidx.gridlayout.widget.GridLayout>
+
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

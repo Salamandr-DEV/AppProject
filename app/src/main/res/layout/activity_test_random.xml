@@ -47,11 +47,11 @@
             android:layout_marginEnd="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/bubblegum_sans"
             android:gravity="center"
-            android:text="Here is your decision"
+            android:text="@string/severaltext"
             android:textColor="#000000"
-            android:textSize="28sp"
-            android:fontFamily="@font/bubblegum_sans"/>
+            android:textSize="28sp" />
 
         <Button
             android:id="@+id/button_several"
@@ -67,7 +67,7 @@
             android:layout_marginRight="25dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/bubblegum_sans"
-            android:text="Give me answer" />
+            android:text="@string/givemeanswer" />
 
         <Button
             android:id="@+id/button_option"
@@ -84,7 +84,7 @@
             android:layout_marginRight="25dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/bubblegum_sans"
-            android:text="Add a list of options" />
+            android:text="@string/addalist" />
 
     </RelativeLayout>
 
