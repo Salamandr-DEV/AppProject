@@ -17,7 +17,7 @@
     <string name="yesno">Yes/No</string>
     <string name="number">Number</string>
     <string name="random">Random</string>
-    <string name="lang">ru</string>
+
 
     //Число
     <string name="randomnumber">Random number</string>
@@ -29,6 +29,16 @@
     <string name="addalist">Add a list of options</string>
     <string name="addoption">Add option</string>
     <string name="getdecision">Get decision</string>
+
+    //Help
+    <string name="friend">Hello friend!</string>
+    <string name="helptext">Can\'t you make a decision? I\'ll help you make the right choice!
+Do you just want to know "Yes " or"no"? Then click the Yes/No window!
+Do you need a random number? Well, of course you need to click on the Number!!!
+And if you want me to choose a certain option, click options,
+add as many options as you need, enter your options in them and click GET a SOLUTION!
+I hope I helped you. Good luck, dear friend.
+    </string>
 
 
 
