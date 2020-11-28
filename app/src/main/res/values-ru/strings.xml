@@ -29,6 +29,7 @@
     <string name="addalist">Добавление списка опций</string>
     <string name="addoption">Добавить опцию</string>
     <string name="getdecision">Получить решение</string>
+    <string name="option_text">Опция</string>
 
     //Help
     <string name="friend">Привет друг!</string>

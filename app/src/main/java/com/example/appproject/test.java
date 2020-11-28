@@ -71,7 +71,7 @@ public class test extends AppCompatActivity{
 
     public void OpenSeveralchoise() {
         Intent i;
-        i = new Intent(this, test_random.class);
+        i = new Intent(this, option.class);
         startActivity(i);
     }
 

@@ -29,6 +29,7 @@
     <string name="addalist">Add a list of options</string>
     <string name="addoption">Add option</string>
     <string name="getdecision">Get decision</string>
+    <string name="option_text">Option</string>
 
     //Help
     <string name="friend">Hello friend!</string>

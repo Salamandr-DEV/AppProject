@@ -16,7 +16,8 @@
         android:layout_toStartOf="@+id/button2"
         android:layout_toLeftOf="@+id/button2"
         android:fontFamily="@font/bubblegum_sans"
-        android:text="@string/option" />
+
+        android:textColor="@color/white" />
 
     <Button
         android:layout_width="50dp"
