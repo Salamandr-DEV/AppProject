@@ -122,7 +122,7 @@ public class option extends AppCompatActivity {
                     }
                 });
                 EditText text = (EditText) view.findViewById(R.id.editText);
-                text.setText("Option " + counter);
+                text.setHint(R.string.option_text);
                 //добавляем все что создаем в массив
                 allEds.add(view);
                 //добавляем елементы в linearlayout

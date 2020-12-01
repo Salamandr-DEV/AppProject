@@ -43,7 +43,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="180dp"
             android:text="@string/severaltext"
-            android:textColor="#000000"
+            android:textColor="@color/white"
             android:textSize="28sp" />
 
         <Button

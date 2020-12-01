@@ -18,7 +18,7 @@
     <string name="yesno">Да/Нет</string>
     <string name="number">Число</string>
     <string name="random">Варианты</string>
-    <string name="lang">eng</string>
+
 
     //Число
     <string name="randomnumber">Случайное число</string>
@@ -30,5 +30,18 @@
     <string name="addalist">Добавление списка опций</string>
     <string name="addoption">Добавить опцию</string>
     <string name="getdecision">Получить решение</string>
+    <string name="option_text">Опция</string>
+
+    //Help
+    <string name="friend">Привет друг!</string>
+    <string name="helptext">
+        Ты не можешь принять решение? Я помогу тебе сделать верный выбор!
+        Хочешь просто узнать "да" или "нет"? Тогда жми окошко Да/Нет!
+        Тебе нужно случайное число? Ну конечно же нужно нажать на Число!!!
+        А если ты хочешь что б я выбрал определенный вариант, жми варианты,
+        добавляй сколько тебе необходимо опций, вписывай в них свои варианты и жми ПОЛУЧИТЬ РЕШЕНИЕ!
+        Надеюсь, я помог тебе. Удачи, дорогой друг.
+
+    </string>
 
 </resources>

@@ -13,7 +13,9 @@
         <activity android:name=".test_random" />
         <activity android:name=".test" />
         <activity android:name=".Number" />
+        <activity android:name=".help"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,6 +25,8 @@
         <activity
             android:name=".yes_no"
             android:label="yes_no" />
+
+
 
         <meta-data
             android:name="preloaded_fonts"
