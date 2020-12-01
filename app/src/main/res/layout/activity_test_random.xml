@@ -5,20 +5,21 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_2"
+    android:background="@drawable/background_gradient"
     tools:context=".test_random"
     tools:openDrawer="start">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/side_nav_bar"
-            app:title="Navigation bar"
+            app:title="@string/Navigationbar"
             app:titleTextColor="@color/white">
 
             <ImageButton
@@ -38,55 +39,36 @@
             android:id="@+id/text_several"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="269dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="10dp"
             android:fontFamily="@font/bubblegum_sans"
-            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="180dp"
             android:text="@string/severaltext"
             android:textColor="#000000"
             android:textSize="28sp" />
 
         <Button
             android:id="@+id/button_several"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="473dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:fontFamily="@font/bubblegum_sans"
             android:text="@string/givemeanswer" />
 
         <Button
             android:id="@+id/button_option"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/button_several"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="523dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:fontFamily="@font/bubblegum_sans"
             android:text="@string/addalist" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navmenu"

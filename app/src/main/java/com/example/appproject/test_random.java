@@ -92,7 +92,7 @@ public class test_random extends AppCompatActivity {
         changeTextView();
 
         Bundle b = this.getIntent().getExtras();
-        if(b != null) {
+        if( b != null) {
             mainarray = b.getStringArray("array");
         }
     }
@@ -105,12 +105,14 @@ public class test_random extends AppCompatActivity {
             {
                 if(mainarray != null)
                 {
-                    int random = (int) (Math.random() * mainarray.length);
-                    if (random == OldValue) {
-                        random = (int) (Math.random() * mainarray.length);
+                    if(mainarray.length != 0) {
+                        int random = (int) (Math.random() * mainarray.length);
+                        if (random == OldValue) {
+                            random = (int) (Math.random() * mainarray.length);
+                        }
+                        text_several.setText(mainarray[random]);
+                        OldValue = random;
                     }
-                    text_several.setText(mainarray[random]);
-                    OldValue = random;
                 }
             }
         });

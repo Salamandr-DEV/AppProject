@@ -12,7 +12,6 @@
         <activity android:name=".option"></activity>
         <activity android:name=".test_random" />
         <activity android:name=".test" />
-        <activity android:name=".severalchoise" />
         <activity android:name=".Number" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -21,9 +20,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".choice"
-            android:label="choice" />
         <activity
             android:name=".yes_no"
             android:label="yes_no" />

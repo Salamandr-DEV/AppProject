@@ -3,9 +3,10 @@
 
     <string name="Open">Открыть</string>
     <string name="Close">Закрыть</string>
+    <string name="Decision">Решение</string>
     <string name="option">Опции</string>
     <string name="help">Помощь</string>
-    <string name="home">Decision</string>
+    <string name="Navigationbar">Панель навигации</string>
     <string name="again">Снова</string>
 
     //Да Нет
