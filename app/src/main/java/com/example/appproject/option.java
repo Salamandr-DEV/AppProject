@@ -2,12 +2,14 @@ package com.example.appproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -142,13 +144,52 @@ public class option extends AppCompatActivity {
     }
     public void goToDecision()
     {
-        Intent i;
+        boolean error = false;
         OnWrite();
+        AlertDialog.Builder a_builder = new AlertDialog.Builder(option.this);
+        a_builder.setMessage(R.string.warning_text)
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent i;
+                        i = new Intent(option.this, test_random.class);
+                        Bundle b = new Bundle();
+                        b.putStringArray("array", items);
+                        i.putExtras(b);
+                        startActivity(i);
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                })
+                .setIcon(R.drawable.ic_baseline_error_24);
         Bundle b = new Bundle();
         b.putStringArray("array", items);
-        i = new Intent(this, test_random.class);
-        i.putExtras(b);
-        startActivity(i);
+        String [] mainarray = b.getStringArray("array");
+
+        for (int j = 0; j < mainarray.length; j++) {
+            if(mainarray[j].equals("")){
+                error = true;
+                break;
+            }
+        }
+        if(error)
+        {
+            AlertDialog alert = a_builder.create();
+            alert.setTitle(R.string.warning);
+            alert.show();
+        }
+        else
+        {
+            Intent i;
+            i = new Intent(option.this, test_random.class);
+            i.putExtras(b);
+            startActivity(i);
+        }
     }
     public void openOption() {
         Intent i;

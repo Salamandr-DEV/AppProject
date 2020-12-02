@@ -34,6 +34,9 @@
     <string name="addoption">Add option</string>
     <string name="getdecision">Get decision</string>
     <string name="option_text">Option</string>
+    <string name="warning">Warning !</string>
+    <string name="warning_text">You have empty options.
+        Proceed?</string>
 
     //Help
     <string name="friend">Hello friend!</string>

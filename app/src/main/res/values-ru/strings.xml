@@ -34,6 +34,9 @@
     <string name="addoption">Добавить опцию</string>
     <string name="getdecision">Получить решение</string>
     <string name="option_text">Опция</string>
+    <string name="warning">Предупреждение !</string>
+    <string name="warning_text">У вас имеются пустые опции.
+        Продолжить?</string>
 
     //Help
     <string name="friend">Привет друг!</string>
