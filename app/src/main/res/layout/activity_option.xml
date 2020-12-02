@@ -80,7 +80,7 @@
     </LinearLayout>
 
 
-    <com.google.android.material.navigation.NavigationView
+    <!-- <com.google.android.material.navigation.NavigationView
         android:id="@+id/navmenu"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -89,6 +89,6 @@
         app:itemIconTint="#ffa500"
         app:menu="@menu/iconmenu">
 
-    </com.google.android.material.navigation.NavigationView>
+    </com.google.android.material.navigation.NavigationView> -->
 
 </androidx.drawerlayout.widget.DrawerLayout>

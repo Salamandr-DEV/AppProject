@@ -15,8 +15,7 @@
         android:layout_marginBottom="10dp"
         android:layout_toStartOf="@+id/button2"
         android:fontFamily="@font/bubblegum_sans"
-
-        android:textColor="@color/white" />
+        android:textColor="@color/black" />
 
     <Button
         android:layout_width="50dp"

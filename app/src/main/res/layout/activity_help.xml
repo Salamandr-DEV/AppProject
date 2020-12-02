@@ -23,7 +23,7 @@
         android:layout_marginTop="60dp"
         android:fontFamily="@font/bubblegum_sans"
         android:text="@string/friend"
-        android:textColor="@color/gray"
+        android:textColor="@color/black"
         android:textSize="42sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,7 @@
                     android:fontFamily="@font/bubblegum_sans"
                     android:gravity="center"
                     android:text="@string/helptext"
-                    android:textColor="@color/gray"
+                    android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
             </LinearLayout>

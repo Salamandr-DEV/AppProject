@@ -69,7 +69,7 @@ public class option extends AppCompatActivity {
         Toolbar toolbar_ = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar_);
 
-        nav=(NavigationView)findViewById(R.id.navmenu);
+        /*nav=(NavigationView)findViewById(R.id.navmenu);
         drawerlayout = (DrawerLayout)findViewById(R.id.drawer);
 
         toggle = new ActionBarDrawerToggle(this, drawerlayout, toolbar_, R.string.Open, R.string.Close);
@@ -93,7 +93,7 @@ public class option extends AppCompatActivity {
                 }
                 return true;
             }
-        });
+        });*/
 
         Button addButton = (Button) findViewById(R.id.button);
         //инициализировали наш массив с edittext.aьи

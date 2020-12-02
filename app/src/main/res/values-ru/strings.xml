@@ -23,12 +23,14 @@
 
     //Число
     <string name="randomnumber">Случайное число</string>
-    <string name="textnumber">Введите число</string>
+    <string name="fromnumber">От</string>
+    <string name="tonumber">До</string>
 
     //Варианты
     <string name="severaltext">Вот ваше решение</string>
     <string name="givemeanswer">Дай мне ответ</string>
     <string name="addalist">Добавление списка опций</string>
+    <string name="updatelist">Обновление списка опций</string>
     <string name="addoption">Добавить опцию</string>
     <string name="getdecision">Получить решение</string>
     <string name="option_text">Опция</string>

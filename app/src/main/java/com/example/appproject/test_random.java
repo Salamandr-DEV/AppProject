@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
@@ -18,6 +19,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.navigation.NavigationView;
+
+import static android.view.KeyEvent.KEYCODE_BACK;
 
 public class test_random extends AppCompatActivity {
     NavigationView nav;
@@ -30,6 +33,7 @@ public class test_random extends AppCompatActivity {
     Button button_several;
     ImageButton button_back_to_menu;
     Button button_go_option;
+    Button button_up_option;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -59,11 +63,19 @@ public class test_random extends AppCompatActivity {
                 goToOption();
             }
         });
+
+        button_up_option   = findViewById(R.id.button_up_option);
+        button_up_option.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v)
+            {
+                goUpOption();
+            }
+        });
         
         Toolbar toolbar_ = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar_);
 
-        nav=(NavigationView)findViewById(R.id.navmenu);
+        /*nav=(NavigationView)findViewById(R.id.navmenu);
         drawerlayout = (DrawerLayout)findViewById(R.id.drawer);
 
         toggle = new ActionBarDrawerToggle(this, drawerlayout, toolbar_, R.string.Open, R.string.Close);
@@ -87,7 +99,7 @@ public class test_random extends AppCompatActivity {
                 }
                 return true;
             }
-        });
+        });*/
 
         changeTextView();
 
@@ -128,6 +140,10 @@ public class test_random extends AppCompatActivity {
         Intent i;
         i = new Intent(this, option.class);
         startActivity(i);
+    }
+    public void goUpOption()
+    {
+        super.onBackPressed();
     }
     public void openOption() {
         Intent i;

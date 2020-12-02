@@ -18,6 +18,7 @@ public class Number extends AppCompatActivity {
     TextView text_v;
     Button button_v;
     EditText number_edit;
+    EditText number_edit2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,7 @@ public class Number extends AppCompatActivity {
         text_v      = findViewById(R.id.textView);
         button_v    = findViewById(R.id.randombtn);
         number_edit      = findViewById(R.id.editTextNumber);
+        number_edit2      = findViewById(R.id.editTextNumber2);
 
         button_v.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -39,7 +41,16 @@ public class Number extends AppCompatActivity {
                 Random rand = new Random();
                 if(!number_edit.getText().toString().equals("")) {
                     int random_number = Integer.parseInt(number_edit.getText().toString());
-                    int number = rand.nextInt(random_number) + 1;
+                    int random_number2 = Integer.parseInt(number_edit2.getText().toString());
+                    int number = 0;
+                    if(random_number > random_number2)
+                    {
+                        number = rand.nextInt(random_number - random_number2) + random_number2 +1;
+                    }
+                    if(random_number2 > random_number)
+                    {
+                        number = rand.nextInt(random_number2 - random_number) + random_number + 1;
+                    }
                     text_v.setText(String.valueOf(number));
                 }
                 else{
