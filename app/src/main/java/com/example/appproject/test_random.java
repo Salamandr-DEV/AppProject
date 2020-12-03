@@ -36,7 +36,7 @@ public class test_random extends AppCompatActivity {
     ImageButton button_back_to_menu;
     Button button_go_option;
     Button button_up_option;
-    Button  buttonHelp;
+    ImageButton  buttonHelp;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override

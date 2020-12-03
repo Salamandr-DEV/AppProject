@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -19,7 +20,7 @@ public class yes_no extends AppCompatActivity {
 
     TextView textYesNo;
     Button buttonYesNo;
-    Button  buttonHelp;
+    ImageButton buttonHelp;
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

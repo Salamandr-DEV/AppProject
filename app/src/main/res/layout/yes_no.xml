@@ -36,12 +36,20 @@
             android:text="@string/again"
             android:textSize="36sp" />
 
-        <Button
-            android:id="@+id/btnHelpYesNo"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="100dp"
-            android:background="@drawable/help3" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnHelpYesNo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/help3"/>
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

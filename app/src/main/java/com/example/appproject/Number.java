@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -21,7 +22,7 @@ public class Number extends AppCompatActivity {
     Button button_v;
     EditText number_edit;
     EditText number_edit2;
-    Button  buttonHelp;
+    ImageButton buttonHelp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

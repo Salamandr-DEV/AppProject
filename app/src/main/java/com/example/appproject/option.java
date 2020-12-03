@@ -35,7 +35,7 @@ public class option extends AppCompatActivity {
     DrawerLayout drawerlayout;
     ImageButton button_back_to_decision;
     Button button_go_test_random;
-    Button  buttonHelp;
+    ImageButton  buttonHelp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -167,7 +167,7 @@ public class option extends AppCompatActivity {
         AlertDialog.Builder a_builder = new AlertDialog.Builder(option.this);
         a_builder.setMessage(R.string.warning_text)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent i;
@@ -178,7 +178,7 @@ public class option extends AppCompatActivity {
                         startActivity(i);
                     }
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
