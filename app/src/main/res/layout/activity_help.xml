@@ -59,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bubblegum_sans"
                     android:gravity="center"
-                    android:text="@string/helptext"
+                    android:text="@string/textAbout"
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold" />

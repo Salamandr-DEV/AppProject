@@ -1,11 +1,9 @@
 package com.example.appproject;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.annotation.SuppressLint;
@@ -13,15 +11,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -40,6 +35,7 @@ public class option extends AppCompatActivity {
     DrawerLayout drawerlayout;
     ImageButton button_back_to_decision;
     Button button_go_test_random;
+    Button  buttonHelp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +66,9 @@ public class option extends AppCompatActivity {
 
         Toolbar toolbar_ = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar_);
+
+        buttonHelp = findViewById(R.id.btnHelpOption);
+
 
         /*nav=(NavigationView)findViewById(R.id.navmenu);
         drawerlayout = (DrawerLayout)findViewById(R.id.drawer);
@@ -129,6 +128,25 @@ public class option extends AppCompatActivity {
                 allEds.add(view);
                 //добавляем елементы в linearlayout
                 linear.addView(view);
+            }
+        });
+        buttonHelp.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(option.this);
+                builder.setTitle(R.string.helpTitle)
+                        .setMessage(R.string.helpTextOption)
+
+                        .setCancelable(false)
+                        .setNegativeButton("ОК",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.cancel();
+                                    }
+                                });
+                android.app.AlertDialog alert = builder.create();
+                alert.show();
             }
         });
     }
@@ -212,4 +230,6 @@ public class option extends AppCompatActivity {
             items[i] = ((EditText) allEds.get(i).findViewById(R.id.editText)).getText().toString();
         }
     }
+
+
 }

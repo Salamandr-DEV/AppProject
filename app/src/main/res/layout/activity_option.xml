@@ -77,6 +77,14 @@
 
         </ScrollView>
 
+        <Button
+            android:id="@+id/btnHelpOption"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/help3" />
+
     </LinearLayout>
 
 

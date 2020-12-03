@@ -6,6 +6,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
@@ -34,6 +36,7 @@ public class test_random extends AppCompatActivity {
     ImageButton button_back_to_menu;
     Button button_go_option;
     Button button_up_option;
+    Button  buttonHelp;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -74,6 +77,8 @@ public class test_random extends AppCompatActivity {
         
         Toolbar toolbar_ = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar_);
+
+        buttonHelp = findViewById(R.id.btnHelpVariant);
 
         /*nav=(NavigationView)findViewById(R.id.navmenu);
         drawerlayout = (DrawerLayout)findViewById(R.id.drawer);
@@ -126,6 +131,26 @@ public class test_random extends AppCompatActivity {
                         OldValue = random;
                     }
                 }
+            }
+        });
+
+        buttonHelp.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                AlertDialog.Builder builder = new AlertDialog.Builder(test_random.this);
+                builder.setTitle(R.string.helpTitle)
+                        .setMessage(R.string.helpTextVariant)
+
+                        .setCancelable(false)
+                        .setNegativeButton("ОК",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.cancel();
+                                    }
+                                });
+                AlertDialog alert = builder.create();
+                alert.show();
             }
         });
     }

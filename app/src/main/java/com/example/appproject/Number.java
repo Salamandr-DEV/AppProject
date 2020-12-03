@@ -2,6 +2,8 @@ package com.example.appproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.Editable;
@@ -19,6 +21,7 @@ public class Number extends AppCompatActivity {
     Button button_v;
     EditText number_edit;
     EditText number_edit2;
+    Button  buttonHelp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +36,7 @@ public class Number extends AppCompatActivity {
         button_v    = findViewById(R.id.randombtn);
         number_edit      = findViewById(R.id.editTextNumber);
         number_edit2      = findViewById(R.id.editTextNumber2);
+        buttonHelp = findViewById(R.id.btnHelpNumber);
 
         button_v.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -57,6 +61,26 @@ public class Number extends AppCompatActivity {
                     int number = rand.nextInt(100) + 1;
                     text_v.setText(String.valueOf(number));
                 }
+            }
+        });
+
+        buttonHelp.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                AlertDialog.Builder builder = new AlertDialog.Builder(Number.this);
+                builder.setTitle(R.string.helpTitle)
+                        .setMessage(R.string.helpTextNumber)
+
+                        .setCancelable(false)
+                        .setNegativeButton("ОК",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog, int id) {
+                                        dialog.cancel();
+                                    }
+                                });
+                AlertDialog alert = builder.create();
+                alert.show();
             }
         });
     }
