@@ -22,7 +22,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:fontFamily="@font/bubblegum_sans"
-            android:text="Decision"
+            android:text="Easy decision"
             android:textColor="@color/black"
             android:textSize="42sp"
             android:textStyle="bold">
