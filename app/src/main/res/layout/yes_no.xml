@@ -22,7 +22,7 @@
             android:fontFamily="@font/bubblegum_sans"
             android:text="@string/yesnotext"
             android:textColor="@color/black"
-            android:textSize="29sp" />
+            android:textSize="38sp" />
 
         <Button
             android:id="@+id/buttonYesNo"
